@@ -37,9 +37,9 @@ All media files are self-contained in `media/` and `assets/`:
 - `media/hero.mp4` / `media/hero-poster.jpg`: 8s ambient video loop & poster
 - `media/music.mp3`: Background soundtrack
 
-### 6. Email RSVP
+### 6. WhatsApp RSVP
 Edit `rsvp` in `wedding-data.js`:
-- `email`: Host's email address to receive RSVPs
+- `phone` / `whatsapp`: Host's WhatsApp number to receive RSVPs (e.g. `+919403420295`)
 - `heading`, `note`, `deadline`: RSVP card text
 
 ---

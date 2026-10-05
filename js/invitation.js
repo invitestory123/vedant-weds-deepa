@@ -160,13 +160,14 @@
         </article>
       </section>
 
-      <section class="paper-section floral rsvp-section" aria-labelledby="rsvp-title">
+      <section class="paper-section floral rsvp-section" id="rsvp-section" aria-labelledby="rsvp-title">
         <div class="rsvp-card reveal">
           <span class="rsvp-kicker">Kindly reply</span>
-          <svg class="rsvp-envelope" viewBox="0 0 48 36" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
-            <rect x="2" y="3" width="44" height="30" rx="2"/>
-            <path d="m3 5 21 16L45 5M3 32l14-14m28 14L31 18"/>
-          </svg>
+          <div class="rsvp-wa-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="42" height="42" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.32a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.13-1.47-.73-1.7-.82-.23-.09-.39-.13-.56.12-.17.25-.64.81-.79.98-.14.17-.29.19-.54.07-.25-.13-1.04-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.28.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.76-1.85-.2-.48-.41-.42-.56-.43-.15 0-.31 0-.48 0-.17 0-.44.06-.66.31-.23.24-.85.82-.85 2.01s.87 2.32.99 2.48c.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.19 1.12.16 1.54.1.47-.07 1.45-.59 1.65-1.17.21-.57.21-1.06.15-1.17-.06-.1-.22-.16-.47-.29z"/>
+            </svg>
+          </div>
           <h2 class="script" id="rsvp-title">${text(data.rsvp?.heading || 'Celebrate With Us')}</h2>
           <p>${text(data.rsvp?.note || 'Your presence will make our celebration complete.')}</p>
           ${data.rsvp?.deadline ? `<p class="rsvp-deadline">Kindly reply by ${text(data.rsvp.deadline)}</p>` : ''}
@@ -184,7 +185,7 @@
             <p class="closing-names"><span>${text(data.couple.first)}</span><i>&amp;</i><span>${text(data.couple.second)}</span></p>
             <p class="closing-date">${text(data.wedding.dateLabel)}</p>
             <p class="closing-note">The days will be memorable.<br>Even more so with your blessings.</p>
-            <a class="closing-rsvp" href="#venue-title">Venue &amp; Details <span aria-hidden="true">↗</span></a>
+            <a class="closing-rsvp" href="#rsvp-section">RSVP via WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
           <p class="closing-caption">Vedant &amp; Deepa · Regenta Convention Center</p>
         </div>

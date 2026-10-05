@@ -96,9 +96,11 @@ window.WEDDING_DATA = {
     "giftPreference": "Your warm presence and heartfelt blessings are our greatest gift. Kindly, no boxed gifts."
   },
   "rsvp": {
-    "email": "",
+    "phone": "+919403420295",
+    "whatsapp": "919403420295",
+    "whatsappDisplay": "+91 94034 20295",
     "heading": "Celebrate With Us",
-    "note": "Your presence will make our celebration complete. Please join us in blessing the couple.",
+    "note": "Your presence will make our celebration complete. Kindly RSVP via WhatsApp.",
     "deadline": "20th November 2026"
   },
   "media": {
