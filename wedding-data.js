@@ -17,7 +17,7 @@ window.WEDDING_DATA = {
     "endISO": "2026-12-03T23:30:00+05:30",
     "salutation": "Dear Family & Friends,",
     "invitationNote": "With the divine grace of the Almighty and the loving blessings of our families, we cordially invite you to celebrate the joyous wedding festivities of our beloved children.",
-    "scheduleNote": "All celebrations would be taking place in <strong>Regenta Convention Centre Nagpur</strong>"
+    "scheduleNote": "All celebrations would be taking place in <strong>Regenta Convention Centre, Nagpur</strong>"
   },
   "events": [
     {
@@ -84,7 +84,7 @@ window.WEDDING_DATA = {
     }
   ],
   "venue": {
-    "name": "Regenta Convention Centre Nagpur",
+    "name": "Regenta Convention Centre, Nagpur",
     "address": "Nagpur, Maharashtra",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Regenta+Central+Hotel+%26+Convention+Centre+Nagpur",
     "timeLabel": "2nd & 3rd Dec 2026",
@@ -100,7 +100,9 @@ window.WEDDING_DATA = {
     "whatsapp": "918888903603",
     "whatsappDisplay": "+91 88889 03603",
     "heading": "Celebrate With Us",
-    "note": "Your presence will make our celebration complete. Kindly RSVP via WhatsApp by 20th November 2026.",
+    "regards": "Regards",
+    "families": "Chhabria & Balwani Family",
+    "note": "Kindly RSVP via WhatsApp by 20th November 2026",
     "deadline": "20th November 2026"
   },
   "media": {

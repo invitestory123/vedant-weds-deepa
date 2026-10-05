@@ -69,21 +69,21 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 .closing{--closing-ground:var(--paper);--closing-line:var(--accent)}
 .closing-scene{position:relative;isolation:isolate;min-height:850px;padding:95px 40px 235px;display:flex;flex-direction:column;align-items:center;overflow:hidden}
 .closing-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom;z-index:-2}
-.closing-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 80%,transparent) 10%,color-mix(in srgb,var(--paper) 25%,transparent) 28%,transparent 65%,var(--paper) 100%);pointer-events:none}
-.closing-copy{width:100%;max-width:350px;text-shadow:none}
+.closing-scene:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--paper) 0%,rgba(14,28,25,0.42) 14%,rgba(14,28,25,0.48) 55%,rgba(14,28,25,0.68) 85%,var(--paper) 100%);pointer-events:none}
+.closing-copy{width:100%;max-width:370px;color:#ffffff;text-shadow:0 2px 14px rgba(0,0,0,0.8),0 1px 3px rgba(0,0,0,0.9)}
 .closing p{letter-spacing:normal}
-.closing .closing-eyebrow{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin:0 0 27px;color:var(--ink)}
-.closing-title{font:400 clamp(48px,12vw,66px)/1.04 "Cormorant Garamond",Georgia,serif;margin:0;letter-spacing:-.035em}
-.closing-title em{display:inline-block;font:400 1.12em/1.3 Parisienne,cursive;letter-spacing:0;padding:0 .12em .08em}
-.closing-rule{width:45px;height:1px;background:var(--closing-line);margin:17px auto 24px;opacity:.8}
-.closing .closing-names{font:400 clamp(43px,11vw,58px)/1.3 "Imperial Script",Parisienne,cursive;margin:0 auto 9px;overflow-wrap:anywhere;max-width:100%}
-.closing-names span{display:inline}.closing-names i{font:400 .6em/1 "Cormorant Garamond",serif;margin:0 .3em}
-.closing .closing-date{font-size:13px;letter-spacing:.18em;margin:0;text-transform:uppercase}
-.closing .closing-note{font-size:18px;line-height:1.5;margin:26px 0 23px}
-.closing-rsvp{display:inline-flex;align-items:center;gap:18px;min-height:46px;padding:10px 20px;border:1px solid var(--closing-line);border-radius:30px;background:color-mix(in srgb,var(--closing-ground) 80%,transparent);color:var(--ink);text-decoration:none;font-size:14px;transition:background .25s,transform .25s}
-.closing-rsvp:hover{background:var(--closing-ground);transform:translateY(-2px)}
+.closing .closing-eyebrow{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;margin:0 0 24px;color:#fdf4ee!important;text-shadow:0 2px 10px rgba(0,0,0,0.85)}
+.closing-title{font:400 clamp(48px,12vw,66px)/1.04 "Cormorant Garamond",Georgia,serif;margin:0;letter-spacing:-.035em;color:#ffffff!important;text-shadow:0 3px 18px rgba(0,0,0,0.9),0 1px 4px rgba(0,0,0,0.9)}
+.closing-title em{display:inline-block;font:400 1.12em/1.3 Parisienne,cursive;letter-spacing:0;padding:0 .12em .08em;color:#fae9ce!important;text-shadow:0 3px 18px rgba(0,0,0,0.9)}
+.closing-rule{width:54px;height:1.5px;background:#ffffffcc;margin:18px auto 24px;box-shadow:0 1px 8px rgba(0,0,0,0.7)}
+.closing .closing-names{font:400 clamp(46px,12vw,62px)/1.25 "Imperial Script",Parisienne,cursive;margin:0 auto 10px;overflow-wrap:anywhere;max-width:100%;color:#ffffff!important;text-shadow:0 3px 18px rgba(0,0,0,0.95),0 1px 6px rgba(0,0,0,0.95)}
+.closing-names span{display:inline}.closing-names i{font:400 .65em/1 "Cormorant Garamond",serif;margin:0 .3em;color:#fae9ce!important}
+.closing .closing-date{font-family:"Marcellus","Cormorant Garamond",Georgia,serif;font-size:15px!important;font-weight:700;letter-spacing:.18em;margin:0;text-transform:uppercase;color:#fdf4ee!important;text-shadow:0 2px 10px rgba(0,0,0,0.85)}
+.closing .closing-note{font-size:18px!important;line-height:1.55;margin:24px 0 24px;color:#ffffff!important;text-shadow:0 2px 12px rgba(0,0,0,0.85),0 1px 4px rgba(0,0,0,0.9)}
+.closing-rsvp{display:inline-flex;align-items:center;gap:14px;min-height:48px;padding:12px 28px;border:1.5px solid #ffffff;border-radius:30px!important;background:#ffffff;color:var(--accent)!important;font-family:"Marcellus",serif;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,0.4);transition:background .25s,transform .25s,box-shadow .25s}
+.closing-rsvp:hover{background:#f7ede9;color:var(--accent)!important;transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,0.5)}
 .closing-rsvp:active{transform:translateY(0)}
-.closing .closing-caption{position:absolute;bottom:26px;left:25px;right:25px;margin:0;font-size:13px;font-style:italic;text-shadow:none}
+.closing .closing-caption{position:absolute;bottom:26px;left:25px;right:25px;margin:0;font-size:13px;font-style:italic;color:#ffffff!important;text-shadow:0 2px 8px rgba(0,0,0,0.9)}
 .closing-colophon{position:relative;padding:10px 25px 100px;background:var(--closing-ground);border-top:0}
 .closing .reopen{color:var(--ink);margin:0;padding:10px 0;min-height:44px;border-color:color-mix(in srgb,var(--closing-line) 50%,transparent);font-size:14px}
 .closing .reopen span{margin-left:12px}
@@ -568,12 +568,14 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 
 /* --- Countdown Date Highlight --- */
 .countdown-note {
+  font-family: "Marcellus", "Cormorant Garamond", Georgia, serif;
   font-size: 23px !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em;
   color: var(--accent) !important;
   margin: 22px 0 0 !important;
   opacity: 1 !important;
+  font-variant-numeric: lining-nums;
 }
 .countdown-note strong {
   font-weight: 700;
@@ -581,16 +583,36 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 
 /* --- Itinerary Card Badges & Note --- */
 .festivity-date {
-  font-size: 14px;
-  font-weight: 700;
+  font-family: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
   background: color-mix(in srgb, var(--accent) 10%, transparent);
   border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
-  padding: 4px 14px;
+  padding: 5px 16px;
   border-radius: 20px;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1px;
+}
+.festivity-date .date-num {
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
   display: inline-block;
+  margin-right: 1px;
+}
+.festivity-date .date-ord {
+  font-size: 0.88em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  vertical-align: 0.08em;
 }
 .schedule-note {
   font-size: 20px !important;
@@ -648,20 +670,44 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
   font-weight: 700;
 }
 .venue-date-highlight {
+  font-family: "Marcellus", "Cormorant Garamond", Georgia, serif;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em;
   color: var(--accent) !important;
   margin: 18px 0 24px !important;
+  font-variant-numeric: lining-nums;
 }
 .venue-date-highlight strong {
   font-weight: 700;
 }
-.rsvp-card .rsvp-deadline {
-  font-size: 15px !important;
+
+/* --- RSVP Typography & Regards --- */
+.rsvp-regards-block {
+  margin: 14px auto 10px;
+}
+.rsvp-regards-lead {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.3;
+}
+.rsvp-regards-names {
+  font-family: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
   font-weight: 600;
   color: var(--accent);
-  letter-spacing: 0.03em;
-  margin-top: 16px;
-  font-style: normal;
+  margin: 4px 0 0;
+  letter-spacing: 0.02em;
+}
+.rsvp-note-continue {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 12px auto 22px;
+  max-width: 320px;
+  line-height: 1.5;
+  opacity: 0.95;
 }

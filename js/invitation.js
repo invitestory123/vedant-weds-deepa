@@ -11,6 +11,11 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeURL = value => { try { const u = new URL(value, location.href); return ['http:','https:','file:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } };
   const text = escape;
+  const formatDateBadge = str => {
+    return String(str ?? '').replace(/^(\d+)(st|nd|rd|th)?/i, (m, num, ord) => {
+      return `<span class="date-num">${escape(num)}</span><span class="date-ord">${escape(ord || '')}</span>`;
+    });
+  };
   const date = new Date(data.wedding.dateISO);
   const validDate = !Number.isNaN(date.getTime());
   document.title = `${data.couple.first} & ${data.couple.second} | Wedding Invitation`;
@@ -100,7 +105,7 @@
           ${(data.events || []).map(event => `
             <article class="festivity-card reveal">
               <div class="festivity-top">
-                <span class="festivity-date">${text(event.date)}</span>
+                <span class="festivity-date">${formatDateBadge(event.date)}</span>
               </div>
               <h3 class="festivity-title">${text(event.title)}</h3>
               <p class="festivity-theme">“${text(event.theme)}”</p>
@@ -136,10 +141,10 @@
 
       <section class="paper-section venue-section torn" aria-labelledby="venue-title">
         <h2 class="script reveal" id="venue-title">Where we celebrate</h2>
-        <img class="venue-scene reveal" src="${asset('hero-first.jpg')}" alt="Regenta Convention Centre Nagpur" loading="lazy">
+        <img class="venue-scene reveal" src="${asset('hero-first.jpg')}" alt="Regenta Convention Centre, Nagpur" loading="lazy">
         <p class="venue-caption">${text(data.venue.sceneCaption)}</p>
         <div class="location-frame reveal">
-          <h3 class="venue-name"><strong>Regenta Convention Centre Nagpur</strong></h3>
+          <h3 class="venue-name"><strong>Regenta Convention Centre, Nagpur</strong></h3>
           <div class="rule" aria-hidden="true"></div>
           <p class="venue-date-highlight"><strong>2nd &amp; 3rd Dec 2026</strong></p>
           <div class="actions">
@@ -170,8 +175,11 @@
             </svg>
           </div>
           <h2 class="script" id="rsvp-title">${text(data.rsvp?.heading || 'Celebrate With Us')}</h2>
-          <p>${text(data.rsvp?.note || 'Your presence will make our celebration complete.')}</p>
-          <p class="rsvp-deadline">Kindly RSVP via WhatsApp by 20th November 2026</p>
+          <div class="rsvp-regards-block">
+            <p class="rsvp-regards-lead">Regards</p>
+            <p class="rsvp-regards-names"><strong>${text(data.rsvp?.families || 'Chhabria & Balwani Family')}</strong></p>
+          </div>
+          <p class="rsvp-note-continue">${text(data.rsvp?.note || 'Kindly RSVP via WhatsApp by 20th November 2026')}</p>
           <form class="rsvp-form" id="rsvp-form"></form>
         </div>
       </section>
@@ -188,7 +196,7 @@
             <p class="closing-note">The days will be memorable.<br>Even more so with your blessings.</p>
             <a class="closing-rsvp" href="#rsvp-section">RSVP via WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="closing-caption">Vedant &amp; Deepa · Regenta Convention Centre Nagpur</p>
+          <p class="closing-caption">Vedant &amp; Deepa · Regenta Convention Centre, Nagpur</p>
         </div>
         <div class="closing-colophon">
           <button class="reopen" id="reopen">Open the envelope again <span aria-hidden="true">↺</span></button>
