@@ -19,7 +19,13 @@
     <div class="entrance" id="entrance">
       <img class="envelope" src="${data.media.openingPoster ? text(safeURL(data.media.openingPoster)) : asset('envelope-first.jpg')}" alt="${text(theme.name)} floral embossed envelope with a wax seal" fetchpriority="high">
       <img class="envelope envelope-end" id="envelope-end" data-src="${asset('envelope-last.jpg')}" alt="" hidden>
-      <button class="open-invitation" id="open" aria-label="Open the wedding invitation"><span class="open-caption">Open your invitation<small>${text(data.couple.first)} &amp; ${text(data.couple.second)}</small></span></button>
+      <button class="open-invitation" id="open" aria-label="Open the wedding invitation">
+        <span class="open-caption">
+          Open your invitation
+          <small class="open-names">${text(data.couple.first)} &amp; ${text(data.couple.second)}</small>
+          <small class="open-date">2nd &amp; 3rd Dec 2026</small>
+        </span>
+      </button>
       <video class="opening-video" id="opening-video" muted playsinline preload="none" hidden></video>
       <button class="skip-opening" id="skip" hidden>Skip opening</button>
     </div>
@@ -32,7 +38,11 @@
           <p class="date">${text(data.wedding.dateLabel)}</p>
           <h1 class="names" id="names" tabindex="-1"><span>${text(data.couple.first)}</span><i>&amp;</i><span>${text(data.couple.second)}</span></h1>
           <p class="hero-note">${text(data.couple.heroNote)}</p>
-          <a class="hero-link" href="#our-invitation">With love, you are invited</a>
+          <a class="hero-scroll-btn" href="#our-invitation" aria-label="Scroll down to invitation">
+            <span class="scroll-arrow" aria-hidden="true">&#x2193;</span>
+            <span class="scroll-text">SCROLL DOWN</span>
+            <span class="scroll-arrow" aria-hidden="true">&#x2193;</span>
+          </a>
         </div>
       </section>
 
@@ -51,7 +61,7 @@
             <span class="role-badge">Groom</span>
             <h3 class="person-title">${text(data.couple.first)}</h3>
             <p class="relation-text">Son of</p>
-            <p class="parents-line"><strong>Rajesh Chhabria</strong><br>&amp; <strong>Sneha Chhabria</strong></p>
+            <p class="parents-line"><strong>Dr. Rajesh Chhabria</strong><br>&amp; <strong>Dr. Sneha Chhabria</strong></p>
           </div>
           <div class="family-knot-center" aria-hidden="true">
             <span class="knot-motif">❦</span>
@@ -62,7 +72,7 @@
             <span class="role-badge">Bride</span>
             <h3 class="person-title">${text(data.couple.second)}</h3>
             <p class="relation-text">Daughter of</p>
-            <p class="parents-line"><strong>Hasanand Balwani</strong><br>&amp; <strong>Sunita Balwani</strong></p>
+            <p class="parents-line"><strong>Mr. Hasanand Balwani</strong><br>&amp; <strong>Mrs. Sunita Balwani</strong></p>
           </div>
         </div>
 
@@ -79,7 +89,7 @@
           <div><strong data-count="minutes">00</strong><span>Minutes</span></div>
           <div><strong data-count="seconds">00</strong><span>Seconds</span></div>
         </div>
-        <p class="countdown-note" id="countdown-note">${text(data.wedding.longDate)}</p>
+        <p class="countdown-note" id="countdown-note"><strong>2nd &amp; 3rd Dec 2026</strong></p>
       </section>
 
       <section class="paper-section floral schedule-section" aria-labelledby="schedule-title">
@@ -90,7 +100,6 @@
           ${(data.events || []).map(event => `
             <article class="festivity-card reveal">
               <div class="festivity-top">
-                <span class="festivity-number">${text(event.number)}</span>
                 <span class="festivity-date">${text(event.date)}</span>
               </div>
               <h3 class="festivity-title">${text(event.title)}</h3>
@@ -108,44 +117,36 @@
             </article>
           `).join('')}
         </div>
-        <p class="schedule-note reveal">${text(data.wedding.scheduleNote)}</p>
+        <p class="schedule-note reveal">${data.wedding.scheduleNote}</p>
       </section>
 
       <section class="paper-section torn couple-gallery" aria-labelledby="couple-gallery-title">
         <h2 class="script reveal" id="couple-gallery-title">Vedant &amp; Deepa</h2>
         <div class="rule" aria-hidden="true"></div>
         <p class="gallery-quote reveal">“Two souls, one sacred journey of love and laughter.”</p>
-        <div class="couple-portraits reveal">
+        <div class="couple-portraits single-portrait reveal">
           <div class="portrait-card royal-portrait">
             <div class="portrait-frame">
-              <img src="${asset('couple-2.jpg')}" alt="Vedant and Deepa" class="portrait-image" loading="lazy">
+              <img src="${asset('couple-royal.jpg')}" alt="Vedant and Deepa" class="portrait-image" loading="lazy">
             </div>
             <p class="portrait-label">A Royal Union</p>
-          </div>
-          <div class="portrait-card sweet-portrait">
-            <div class="portrait-frame">
-              <img src="${asset('couple-1.png')}" alt="Vedant and Deepa Moments" class="portrait-image" loading="lazy">
-            </div>
-            <p class="portrait-label">Moments of Joy</p>
           </div>
         </div>
       </section>
 
       <section class="paper-section venue-section torn" aria-labelledby="venue-title">
         <h2 class="script reveal" id="venue-title">Where we celebrate</h2>
-        <img class="venue-scene reveal" src="${asset('hero-first.jpg')}" alt="Regenta Convention Center" loading="lazy">
+        <img class="venue-scene reveal" src="${asset('hero-first.jpg')}" alt="Regenta Convention Centre Nagpur" loading="lazy">
         <p class="venue-caption">${text(data.venue.sceneCaption)}</p>
         <div class="location-frame reveal">
-          <h3 class="venue-name">${text(data.venue.name)}</h3>
+          <h3 class="venue-name"><strong>Regenta Convention Centre Nagpur</strong></h3>
           <div class="rule" aria-hidden="true"></div>
-          <address class="venue-address">${text(data.venue.address)}</address>
-          <p>${text(data.venue.timeLabel)}</p>
+          <p class="venue-date-highlight"><strong>2nd &amp; 3rd Dec 2026</strong></p>
           <div class="actions">
             <a class="action" id="maps" target="_blank" rel="noopener noreferrer">Open in maps</a>
             <button class="action secondary" id="calendar">Add to calendar</button>
           </div>
         </div>
-        <p class="travel-note">${text(data.venue.note)}</p>
       </section>
 
       <section class="paper-section floral etiquette" aria-label="Guest details">
@@ -170,7 +171,7 @@
           </div>
           <h2 class="script" id="rsvp-title">${text(data.rsvp?.heading || 'Celebrate With Us')}</h2>
           <p>${text(data.rsvp?.note || 'Your presence will make our celebration complete.')}</p>
-          ${data.rsvp?.deadline ? `<p class="rsvp-deadline">Kindly reply by ${text(data.rsvp.deadline)}</p>` : ''}
+          <p class="rsvp-deadline">Kindly RSVP via WhatsApp by 20th November 2026</p>
           <form class="rsvp-form" id="rsvp-form"></form>
         </div>
       </section>
@@ -187,11 +188,11 @@
             <p class="closing-note">The days will be memorable.<br>Even more so with your blessings.</p>
             <a class="closing-rsvp" href="#rsvp-section">RSVP via WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="closing-caption">Vedant &amp; Deepa · Regenta Convention Center</p>
+          <p class="closing-caption">Vedant &amp; Deepa · Regenta Convention Centre Nagpur</p>
         </div>
         <div class="closing-colophon">
           <button class="reopen" id="reopen">Open the envelope again <span aria-hidden="true">↺</span></button>
-          <a class="dearly-signature" href="#" aria-label="Vedant weds Deepa">Vedant &amp; Deepa<small>2nd &amp; 3rd December 2026</small></a>
+          <a class="dearly-signature" href="#" aria-label="Vedant weds Deepa">Vedant &amp; Deepa<small>2nd &amp; 3rd Dec 2026</small></a>
           ${data.media.music && data.media.musicTitle ? `<p class="music-credit">Music: <a href="${text(safeURL(data.media.musicSource))}" target="_blank" rel="noopener noreferrer">${text(data.media.musicTitle)}</a><br>Kevin MacLeod · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br><small>Volume adjusted · soft fade-in</small></p>` : ''}
         </div>
       </footer>

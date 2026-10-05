@@ -1,7 +1,7 @@
 /* Shared WhatsApp RSVP behavior for Vedant & Deepa */
 window.initWeddingRSVP = (form, config, names) => {
-  const rawNumber = String(config.whatsapp || config.phone || '+919403420295').trim();
-  const cleanNumber = rawNumber.replace(/\D/g, '') || '919403420295';
+  const rawNumber = String(config.whatsapp || config.phone || '+918888903603').trim();
+  const cleanNumber = rawNumber.replace(/\D/g, '') || '918888903603';
   const displayPhone = config.whatsappDisplay || (rawNumber.startsWith('+') ? rawNumber : '+' + rawNumber);
 
   form.innerHTML = `

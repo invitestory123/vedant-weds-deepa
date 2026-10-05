@@ -5,23 +5,23 @@ window.WEDDING_DATA = {
   "couple": {
     "first": "Vedant",
     "second": "Deepa",
-    "groomParents": "Rajesh Chhabria and Sneha Chhabria",
-    "brideParents": "Hasanand Balwani and Sunita Balwani",
+    "groomParents": "Dr. Rajesh Chhabria and Dr. Sneha Chhabria",
+    "brideParents": "Mr. Hasanand Balwani and Mrs. Sunita Balwani",
     "heroNote": "Together with our families",
     "subtitle": "Two souls, one sacred journey"
   },
   "wedding": {
-    "dateLabel": "02 · 12 · 2026",
-    "longDate": "2nd & 3rd December 2026",
+    "dateLabel": "2nd & 3rd Dec 2026",
+    "longDate": "2nd & 3rd Dec 2026",
     "dateISO": "2026-12-02T14:00:00+05:30",
     "endISO": "2026-12-03T23:30:00+05:30",
     "salutation": "Dear Family & Friends,",
     "invitationNote": "With the divine grace of the Almighty and the loving blessings of our families, we cordially invite you to celebrate the joyous wedding festivities of our beloved children.",
-    "scheduleNote": "All celebrations will take place at Regenta Convention Center. We request the honor of your gracious presence and blessings."
+    "scheduleNote": "All celebrations would be taking place in <strong>Regenta Convention Centre Nagpur</strong>"
   },
   "events": [
     {
-      "number": "1st Function",
+      "number": "",
       "title": "Haldi Carnival",
       "theme": "Gulab Glitter and Gupshup",
       "date": "2nd Dec 2026",
@@ -29,7 +29,7 @@ window.WEDDING_DATA = {
       "venue": "Rooftop (Lawn)"
     },
     {
-      "number": "2nd Function",
+      "number": "",
       "title": "Sangeet Soiree",
       "theme": "Rings Rhyme and Reflections",
       "date": "2nd Dec 2026",
@@ -37,23 +37,23 @@ window.WEDDING_DATA = {
       "venue": "Rooftop (Lawn)"
     },
     {
-      "number": "3rd Function",
+      "number": "",
       "title": "Mukut Bandhan & Baraat",
       "theme": "Mukut Bandhan - 12:00 PM · Followed by Baraat - 2:00 PM",
       "date": "3rd Dec 2026",
       "time": "12:00 PM & 2:00 PM",
-      "venue": "Entrance gate of Regenta convention center"
+      "venue": "Entrance Gate"
     },
     {
-      "number": "Wedding Ceremony",
-      "title": "A Divine Knot - Vedi",
-      "theme": "Sacred Pheras & Auspicious Vows",
+      "number": "",
+      "title": "Wedding Ceremony",
+      "theme": "A Divine Knot - Vedi · Sacred Pheras & Auspicious Vows",
       "date": "3rd Dec 2026",
       "time": "4:00 PM",
       "venue": "Oasis Hall"
     },
     {
-      "number": "4th Function",
+      "number": "",
       "title": "Gala Night",
       "theme": "Gala Glam",
       "date": "3rd Dec 2026",
@@ -84,23 +84,23 @@ window.WEDDING_DATA = {
     }
   ],
   "venue": {
-    "name": "Regenta Convention Center",
-    "address": "Regenta Convention Center (Rooftop Lawn, Entrance Gate & Oasis Hall)",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Regenta+Convention+Center",
-    "timeLabel": "2nd & 3rd December 2026",
+    "name": "Regenta Convention Centre Nagpur",
+    "address": "Nagpur, Maharashtra",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Regenta+Central+Hotel+%26+Convention+Centre+Nagpur",
+    "timeLabel": "2nd & 3rd Dec 2026",
     "sceneCaption": "Where our unforgettable moments unfold",
-    "note": "Celebrate with us at Regenta Convention Center across Rooftop Lawn, Entrance Gate, and Oasis Hall."
+    "note": ""
   },
   "details": {
     "dressCode": "Festive Indian Traditional & Gala Glamour.",
-    "giftPreference": "Your warm presence and heartfelt blessings are our greatest gift. Kindly, no boxed gifts."
+    "giftPreference": "Your warm presence and heartfelt blessings are our greatest gift."
   },
   "rsvp": {
-    "phone": "+919403420295",
-    "whatsapp": "919403420295",
-    "whatsappDisplay": "+91 94034 20295",
+    "phone": "+918888903603",
+    "whatsapp": "918888903603",
+    "whatsappDisplay": "+91 88889 03603",
     "heading": "Celebrate With Us",
-    "note": "Your presence will make our celebration complete. Kindly RSVP via WhatsApp.",
+    "note": "Your presence will make our celebration complete. Kindly RSVP via WhatsApp by 20th November 2026.",
     "deadline": "20th November 2026"
   },
   "media": {
@@ -111,8 +111,7 @@ window.WEDDING_DATA = {
     "music": "./media/music.mp3",
     "musicTitle": "Aay Dil-e-Nadaan (Santoor Cover by Zahoor Ahmad)",
     "musicSource": "https://youtube.com/shorts/7fdkYoKiqmg",
-    "couplePortrait": "./assets/couple-2.jpg",
-    "coupleMoments": "./assets/couple-1.png",
+    "couplePortrait": "./assets/couple-royal.jpg",
     "ganesh": "./assets/ganesha.png"
   }
 };
