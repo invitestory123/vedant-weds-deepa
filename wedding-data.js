@@ -107,8 +107,8 @@ window.WEDDING_DATA = {
     "heroVideo": "./media/hero.mp4",
     "heroPoster": "./media/hero-poster.jpg",
     "music": "./media/music.mp3",
-    "musicTitle": "Enchanted Journey",
-    "musicSource": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100799",
+    "musicTitle": "Aay Dil-e-Nadaan (Santoor Cover by Zahoor Ahmad)",
+    "musicSource": "https://youtube.com/shorts/7fdkYoKiqmg",
     "couplePortrait": "./assets/couple-2.jpg",
     "coupleMoments": "./assets/couple-1.png",
     "ganesh": "./assets/ganesha.png"
