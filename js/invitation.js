@@ -12,9 +12,10 @@
   const safeURL = value => { try { const u = new URL(value, location.href); return ['http:','https:','file:'].includes(u.protocol) ? u.href : ''; } catch { return ''; } };
   const text = escape;
   const formatDateBadge = str => {
-    return String(str ?? '').replace(/^(\d+)(st|nd|rd|th)?/i, (m, num, ord) => {
-      return `<span class="date-num">${escape(num)}</span><span class="date-ord">${escape(ord || '')}</span>`;
-    });
+    const parts = String(str ?? '').match(/^(\d+)(st|nd|rd|th)?\s*(.*)$/i);
+    if (!parts) return escape(str ?? '');
+    const [, num, ord, rest] = parts;
+    return `<span class="date-num">${escape(num)}</span><span class="date-ord">${escape(ord || '')}</span><span class="date-rest">${escape(rest)}</span>`;
   };
   const date = new Date(data.wedding.dateISO);
   const validDate = !Number.isNaN(date.getTime());
@@ -179,7 +180,7 @@
             <p class="rsvp-regards-lead">Regards</p>
             <p class="rsvp-regards-names"><strong>${text(data.rsvp?.families || 'Chhabria & Balwani Family')}</strong></p>
           </div>
-          <p class="rsvp-note-continue">${text(data.rsvp?.note || 'Kindly RSVP via WhatsApp by 20th November 2026')}</p>
+          <p class="rsvp-note-continue">${text(data.rsvp?.note || 'Kindly RSVP via WhatsApp by 30th October 2026')}</p>
           <form class="rsvp-form" id="rsvp-form"></form>
         </div>
       </section>
@@ -201,7 +202,7 @@
         <div class="closing-colophon">
           <button class="reopen" id="reopen">Open the envelope again <span aria-hidden="true">↺</span></button>
           <a class="dearly-signature" href="#" aria-label="Vedant weds Deepa">Vedant &amp; Deepa<small>2nd &amp; 3rd Dec 2026</small></a>
-          ${data.media.music && data.media.musicTitle ? `<p class="music-credit">Music: <a href="${text(safeURL(data.media.musicSource))}" target="_blank" rel="noopener noreferrer">${text(data.media.musicTitle)}</a><br>Kevin MacLeod · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br><small>Volume adjusted · soft fade-in</small></p>` : ''}
+          ${data.media.music && data.media.musicTitle ? `<p class="music-credit">Music: <a href="${text(safeURL(data.media.musicSource))}" target="_blank" rel="noopener noreferrer">${text(data.media.musicTitle)}</a>${data.media.musicCredit ? `<br>${text(data.media.musicCredit)}` : ''}<br><small>Volume adjusted · soft fade-in</small></p>` : ''}
         </div>
       </footer>
     </main>

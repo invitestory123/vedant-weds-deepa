@@ -96,14 +96,14 @@ window.WEDDING_DATA = {
     "giftPreference": "Your warm presence and heartfelt blessings are our greatest gift."
   },
   "rsvp": {
-    "phone": "+918888903603",
-    "whatsapp": "918888903603",
-    "whatsappDisplay": "+91 88889 03603",
+    "phone": "+919326593147",
+    "whatsapp": "919326593147",
+    "whatsappDisplay": "+91 93265 93147",
     "heading": "Celebrate With Us",
     "regards": "Regards",
     "families": "Chhabria & Balwani Family",
-    "note": "Kindly RSVP via WhatsApp by 20th November 2026",
-    "deadline": "20th November 2026"
+    "note": "Kindly RSVP via WhatsApp by 30th October 2026",
+    "deadline": "30th October 2026"
   },
   "media": {
     "openingVideo": "./media/opening.mp4",
@@ -111,8 +111,9 @@ window.WEDDING_DATA = {
     "heroVideo": "./media/hero.mp4",
     "heroPoster": "./media/hero-poster.jpg",
     "music": "./media/music.mp3",
-    "musicTitle": "Aay Dil-e-Nadaan (Santoor Cover by Zahoor Ahmad)",
-    "musicSource": "https://youtube.com/shorts/7fdkYoKiqmg",
+    "musicTitle": "Nothing's Gonna Change My Love for You (Piano Version)",
+    "musicCredit": "Riyandi Kusuma · YouTube Music",
+    "musicSource": "https://music.youtube.com/watch?v=r6v19KKOGm0&si=-lrotygbk6Q4NZNK",
     "couplePortrait": "./assets/couple-royal.jpg",
     "ganesh": "./assets/ganesha.png"
   }
