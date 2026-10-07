@@ -35,7 +35,7 @@ Edit `venue` in `wedding-data.js`:
 All media files are self-contained in `media/` and `assets/`:
 - `media/opening.mp4` / `media/opening-poster.jpg`: 6s envelope opening video & poster
 - `media/hero.mp4` / `media/hero-poster.jpg`: 8s ambient video loop & poster
-- `media/music.mp3`: Background soundtrack
+- `media/music.m4a`: Background soundtrack (M4A/AAC audio)
 
 ### 6. WhatsApp RSVP
 Edit `rsvp` in `wedding-data.js`:

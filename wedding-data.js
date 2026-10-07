@@ -110,7 +110,7 @@ window.WEDDING_DATA = {
     "openingPoster": "./media/opening-poster.jpg",
     "heroVideo": "./media/hero.mp4",
     "heroPoster": "./media/hero-poster.jpg",
-    "music": "./media/music.mp3",
+    "music": "./media/music.m4a",
     "musicTitle": "Nothing's Gonna Change My Love for You (Piano Version)",
     "musicCredit": "Riyandi Kusuma · YouTube Music",
     "musicSource": "https://music.youtube.com/watch?v=r6v19KKOGm0&si=-lrotygbk6Q4NZNK",
